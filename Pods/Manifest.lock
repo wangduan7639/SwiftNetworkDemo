@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (3.1.2)
+  - RxSwift (2.0.0-beta.2)
+  - SFProgressHUD (0.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - RxSwift (~> 2.0.0-beta.2)
+  - SFProgressHUD (~> 0.1.1)
+
+SPEC CHECKSUMS:
+  Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  RxSwift: 795720c22352cf1f62669ef3695b5df7e195103b
+  SFProgressHUD: 3f2ea24246cbc736fb2a890050d8a17e55ed01d5
+
+COCOAPODS: 0.39.0
