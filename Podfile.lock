@@ -1,16 +1,19 @@
 PODS:
   - Alamofire (3.1.2)
-  - RxSwift (2.0.0-beta.2)
+  - RxSwift (2.0.0-beta.3)
   - SFProgressHUD (0.1.1)
+  - SnapKit (0.18.0)
 
 DEPENDENCIES:
-  - Alamofire
+  - Alamofire (~> 3.1.2)
   - RxSwift (~> 2.0.0-beta.2)
   - SFProgressHUD (~> 0.1.1)
+  - SnapKit (~> 0.18.0)
 
 SPEC CHECKSUMS:
   Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
-  RxSwift: 795720c22352cf1f62669ef3695b5df7e195103b
+  RxSwift: 19fbe885b404d1d36d42ac8535134739a9b42952
   SFProgressHUD: 3f2ea24246cbc736fb2a890050d8a17e55ed01d5
+  SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
 
 COCOAPODS: 0.39.0
