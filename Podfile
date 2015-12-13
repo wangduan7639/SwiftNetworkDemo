@@ -8,7 +8,8 @@ pod 'SFProgressHUD', '~> 0.1.1'
 #网络请求库
 pod 'Alamofire', '~> 3.1.2'
 pod 'SnapKit', '~> 0.18.0'
-
+pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+pod 'JSONModel', '~> 1.1.2'
 
 post_install do |installer|
     installer.pods_project.targets.each do |target|

@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 class WDFirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var tableView:UITableView!
+    var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

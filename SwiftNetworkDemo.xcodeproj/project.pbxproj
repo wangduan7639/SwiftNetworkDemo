@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51C712851C1D7EBF00E99B5B /* WDNetWorkSwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C712841C1D7EBF00E99B5B /* WDNetWorkSwiftyJSON.swift */; };
+		51C712871C1D848800E99B5B /* WDNetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C712861C1D848800E99B5B /* WDNetWorkManager.swift */; };
+		51C7128B1C1D9ADC00E99B5B /* WDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C7128A1C1D9ADC00E99B5B /* WDModel.m */; };
 		6EA3E34E6CD133D9A3E9F728 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E30BF9ABA4BA7284D0B66D1 /* Pods.framework */; };
 		765DBA311C0C6D4400C50D26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DBA301C0C6D4400C50D26 /* AppDelegate.swift */; };
 		765DBA381C0C6D4400C50D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 765DBA371C0C6D4400C50D26 /* Assets.xcassets */; };
@@ -42,6 +45,12 @@
 
 /* Begin PBXFileReference section */
 		21B311B85EDC91B9CDFDD4A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		51C712831C1D7DB000E99B5B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		51C712841C1D7EBF00E99B5B /* WDNetWorkSwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDNetWorkSwiftyJSON.swift; path = SwiftNetworkDemo/WDNetWorkSwiftyJSON.swift; sourceTree = SOURCE_ROOT; };
+		51C712861C1D848800E99B5B /* WDNetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WDNetWorkManager.swift; path = SwiftNetworkDemo/WDNetWorkManager.swift; sourceTree = SOURCE_ROOT; };
+		51C712881C1D9ADB00E99B5B /* SwiftNetworkDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftNetworkDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		51C712891C1D9ADC00E99B5B /* WDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WDModel.h; sourceTree = "<group>"; };
+		51C7128A1C1D9ADC00E99B5B /* WDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WDModel.m; sourceTree = "<group>"; };
 		6E30BF9ABA4BA7284D0B66D1 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765DBA2D1C0C6D4400C50D26 /* SwiftNetworkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetworkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		765DBA301C0C6D4400C50D26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +146,7 @@
 				76FC81211C0C704200A3CFED /* Model */,
 				76FC81221C0C704200A3CFED /* NetWork */,
 				765DBA301C0C6D4400C50D26 /* AppDelegate.swift */,
+				51C712831C1D7DB000E99B5B /* PrefixHeader.pch */,
 				7669E7B31C0D4AFC00A1F1D9 /* LaunchScreen.storyboard */,
 				7669E7B51C0D4AFC00A1F1D9 /* Main.storyboard */,
 				765DBA371C0C6D4400C50D26 /* Assets.xcassets */,
@@ -187,6 +197,9 @@
 		76FC81211C0C704200A3CFED /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				51C712891C1D9ADC00E99B5B /* WDModel.h */,
+				51C7128A1C1D9ADC00E99B5B /* WDModel.m */,
+				51C712881C1D9ADB00E99B5B /* SwiftNetworkDemo-Bridging-Header.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,6 +207,8 @@
 		76FC81221C0C704200A3CFED /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
+				51C712841C1D7EBF00E99B5B /* WDNetWorkSwiftyJSON.swift */,
+				51C712861C1D848800E99B5B /* WDNetWorkManager.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -268,7 +283,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = WD;
-				LastSwiftUpdateCheck = 0710;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = wd;
 				TargetAttributes = {
@@ -443,10 +458,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C712871C1D848800E99B5B /* WDNetWorkManager.swift in Sources */,
 				7669E7AE1C0D489200A1F1D9 /* WDFirstViewController.swift in Sources */,
+				51C712851C1D7EBF00E99B5B /* WDNetWorkSwiftyJSON.swift in Sources */,
 				7669E7AC1C0D3D4800A1F1D9 /* WDTabScrollView.swift in Sources */,
 				7669E7AA1C0D3D2500A1F1D9 /* WDTabMenuView.swift in Sources */,
 				76FC81231C0C704200A3CFED /* WDViewController.swift in Sources */,
+				51C7128B1C1D9ADC00E99B5B /* WDModel.m in Sources */,
 				7669E7B21C0D48BC00A1F1D9 /* WDThirdViewController.swift in Sources */,
 				765DBA311C0C6D4400C50D26 /* AppDelegate.swift in Sources */,
 				7669E7B01C0D48A100A1F1D9 /* WDSecondViewController.swift in Sources */,
@@ -590,10 +608,14 @@
 			baseConfigurationReference = 21B311B85EDC91B9CDFDD4A7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SwiftNetworkDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SwiftNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.SwiftNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNetworkDemo/Model/SwiftNetworkDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -602,10 +624,13 @@
 			baseConfigurationReference = DAFBBDD5D1665BF3BD2121DD /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SwiftNetworkDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SwiftNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.SwiftNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNetworkDemo/Model/SwiftNetworkDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};

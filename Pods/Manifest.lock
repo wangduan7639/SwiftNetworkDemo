@@ -1,19 +1,34 @@
 PODS:
   - Alamofire (3.1.2)
+  - JSONModel (1.1.2)
   - RxSwift (2.0.0-beta.3)
   - SFProgressHUD (0.1.1)
   - SnapKit (0.18.0)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.1.2)
+  - JSONModel (~> 1.1.2)
   - RxSwift (~> 2.0.0-beta.2)
   - SFProgressHUD (~> 0.1.1)
   - SnapKit (~> 0.18.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 8e618c8baf6323a5079c6549bb38d48357b31630
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
   Alamofire: 7c16ca65f3c7e681fd925fd7f2dec7747ff96855
+  JSONModel: 216584d0311b053ff714f1d6cb700dbf890847bc
   RxSwift: 19fbe885b404d1d36d42ac8535134739a9b42952
   SFProgressHUD: 3f2ea24246cbc736fb2a890050d8a17e55ed01d5
   SnapKit: e1f090a6d47b1dd4bd89b73f72b6746a7835ef3c
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0
