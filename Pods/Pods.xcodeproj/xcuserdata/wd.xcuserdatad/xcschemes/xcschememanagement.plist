@@ -8,25 +8,53 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>JSONModel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>SFProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0BF8569A1D17D47E1A86EB020383E8D1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>407D8D22B23782A169FF2F2FE0FD3C69</key>
 		<dict>
 			<key>primary</key>
@@ -37,7 +65,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5A0371165AB3FE671F009017100279CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>696D8922E90C2DB0BB0712613FC7815E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91D44965571BD6A75A89CAB9425CC3D2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8778CAD24A1D1CA2E183C0E0F6C01E7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>AA688873F567B2B313A067F368CBDC1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B074868454BCF5726263C3ADDD70D243</key>
 		<dict>
 			<key>primary</key>
 			<true/>

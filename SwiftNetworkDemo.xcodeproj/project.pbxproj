@@ -609,11 +609,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: duan wang (8U4A5TG64B)";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SwiftNetworkDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SwiftNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.SwiftNetworkDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangduan.SwiftNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "88f70b3a-39c2-43ae-bd0a-ec9fce8248b3";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNetworkDemo/Model/SwiftNetworkDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -628,8 +630,9 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SwiftNetworkDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SwiftNetworkDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = www.wangduan.com.SwiftNetworkDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wangduan.SwiftNetworkDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "88f70b3a-39c2-43ae-bd0a-ec9fce8248b3";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNetworkDemo/Model/SwiftNetworkDemo-Bridging-Header.h";
 			};
 			name = Release;

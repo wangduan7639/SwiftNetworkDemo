@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import SFProgressHUD
 
 class WDSecondViewController: UIViewController {
     
@@ -92,13 +93,16 @@ class WDSecondViewController: UIViewController {
             self.textView.text=String(JSON(response.result.value!));
         }
         #endif
+        SFProgressHUD.showHUD(self.view)
         //WARK: 使用JSONModel封装的
         WDNetWorkManager.sharedInstance.requestModel(.GET, "/get", success: { (wdModel: WDModel) -> Void in
-            self.textView.text = wdModel.debugDescription
+                self.textView.text = wdModel.debugDescription
+                SFProgressHUD.hideHUD(self.view)
             
-        }) { (error) -> Void in
-            self.textView.text = error.debugDescription
-        }
+            }) { (error) -> Void in
+                self.textView.text = error.debugDescription
+                SFProgressHUD.hideHUD(self.view)
+            }
         
     }
     
@@ -121,23 +125,28 @@ class WDSecondViewController: UIViewController {
                 self.textView.text=String(JSON(response.result.value!));
             }
         #endif
+        SFProgressHUD.showHUD(self.view)
         //WARK: 使用JSONModel封装的
         WDNetWorkManager.sharedInstance.requestModel(.POST, "/post", success: { (wdModel: WDModel) -> Void in
-            self.textView.text = wdModel.debugDescription
-            
+                self.textView.text = wdModel.debugDescription
+                SFProgressHUD.hideHUD(self.view)
             }) { (error) -> Void in
                 self.textView.text = error.debugDescription
-        }
+                SFProgressHUD.hideHUD(self.view)
+            }
     }
     
     func paramsButtonClicked(sender: UIButton){
+        SFProgressHUD .showHUD(self.view)
+        
         //WARK: 使用JSONModel封装的
         WDNetWorkManager.sharedInstance.requestModel(.GET, "/get", parameters: ["foo": "bar"], success: { (wdModel: WDModel) -> Void in
-            self.textView.text = wdModel.debugDescription
-            
+                self.textView.text = wdModel.debugDescription
+                SFProgressHUD.hideHUD(self.view)
             }) { (error) -> Void in
                 self.textView.text = error.debugDescription
-        }
+                SFProgressHUD.hideHUD(self.view)
+            }
     }
 
 }

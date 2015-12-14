@@ -32,6 +32,7 @@ public class WDNetWorkManager {
         Alamofire.request(method, urlString,parameters: parameters, encoding: ParameterEncoding.JSON).responseJSON { (response) -> Void in
             guard response.result.error == nil else {
                 print("获取数据失败")
+                failure(response.result.error)
                 return
             }
             if let dict = response.result.value as? NSDictionary {
